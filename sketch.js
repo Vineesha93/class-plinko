@@ -26,7 +26,7 @@ ground1 = new Ground(240,760,490,20);
 function draw() {
   background(5,0,0);  
   
-
+ Engine.update(engine);
  
 
   if (frameCount%60===0){
@@ -40,28 +40,28 @@ function draw() {
     divisions[k].display();
   } 
 
-  for (var j  = 0 ;j< plinkos.length;j++){
-    plinkos[j].display();
-  }
-  for (var j = 40 ; j <=innerWidth;j=j+50){
-    plinkos.push(new Plinko(j,75,10,10));
-    }
+//   for (var j  = 0 ;j< plinkos.length;j++){
+//     plinkos[j].display();
+//   }
+//   for (var j = 40 ; j <=innerWidth;j=j+50){
+//     plinkos.push(new Plinko(j,75,10,10));
+//     }
     
-    for (var j = 15 ;  j<=innerWidth-10;j=j+50){
-      plinkos.push(new Plinko(j,175,10,10));
-    }
+//     for (var j = 15 ;  j<=innerWidth-10;j=j+50){
+//       plinkos.push(new Plinko(j,175,10,10));
+//     }
     
-    for (var j= 15 ; j <=innerWidth-20;j=j+50){
-    plinkos.push(new Plinko(j,275,10,10));
-      }
+//     for (var j= 15 ; j <=innerWidth-20;j=j+50){
+//     plinkos.push(new Plinko(j,275,10,10));
+//       }
             
-     for (var j = 15 ; j <=innerWidth-30;j=j+50){
-      plinkos.push(new Plinko(j,375,10,10));
-         }
+//      for (var j = 15 ; j <=innerWidth-30;j=j+50){
+//       plinkos.push(new Plinko(j,375,10,10));
+//          }
   
-  for (var k = 0; k<=innerWidth;k=k + 80){
-   divisions.push(new Divisions(k,height-divisionHeight/2,10,divisionHeight))
- }
+//   for (var k = 0; k<=innerWidth;k=k + 80){
+//    divisions.push(new Divisions(k,height-divisionHeight/2,10,divisionHeight))
+//  }
 
 
     ground1.display();
